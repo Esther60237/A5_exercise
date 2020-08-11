@@ -1,9 +1,9 @@
 <div class="container justify-content-center mt-3">
   <form method="POST" action="/">
-    <div class="content d-flex justify-content-center">
-      <div class="engineer col">
+    <div class="content d-flex justify-content-around">
+      <div class="engineer col-auto d-flex flex-column align-items-center">
         <div class="card" style="width: 13rem;">
-          <img class="card-img-top" style="height: auto;"
+          <img class="card-img-top" style="height: 200px; object-fit: cover;"
             src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5668/angry-developer.jpg" alt="">
         </div>
         <div class="form-check form-check-inline">
@@ -13,9 +13,9 @@
         </div>
       </div>
 
-      <div class="designer col">
+      <div class="designer col-auto d-flex flex-column align-items-center">
         <div class="card" style="width: 13rem;">
-          <img class="card-img-top"
+          <img class="card-img-top" style="height:200px; object-fit: cover;"
             src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5667/angry-designer.jpg" alt="">
         </div>
         <div class="form-check form-check-inline">
@@ -25,9 +25,9 @@
         </div>
       </div>
 
-      <div class="entrepreneur col">
+      <div class="entrepreneur col-auto d-flex flex-column align-items-center">
         <div class="card" style="width: 13rem;">
-          <img class="card-img-top"
+          <img class="card-img-top" style="height:200px; object-fit: cover;"
             src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5669/angry-founder.jpg" alt="">
         </div>
         <div class="form-check form-check-inline">
@@ -37,14 +37,12 @@
         </div>
       </div>
     </div>
-    <div class="message d-flex justify-content-center mt-4">
-      <button class="btn btn-success col-2 mr-5" type="submit">產生幹話</button>
-      <textarea class="col-10" name="" rows="2">
-        {{#if result}}
-          {{result}}
-        {{/if}}
-      </textarea>
+    <div class="d-flex mt-4 ">
+      <button class="btn btn-success col-3 mr-2" type="submit">產生幹話</button>
+      <input class="col-9" type="text" placeholder="{{#if result}}{{result}}{{/if}}">
+
     </div>
-  </form>
+</div>
+</form>
 
 </div>
