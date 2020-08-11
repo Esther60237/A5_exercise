@@ -2,6 +2,7 @@ const express = require('express')
 const app = express()
 const port = 3000
 const generateWords = require('./generate_words')
+const helper = require('./helper.js')
 
 
 const exphbs = require('express-handlebars')
@@ -17,9 +18,10 @@ app.get('/', (req, res) => {
 
 
 app.post('/', (req, res) => {
-  const options = req.body
-  const result = generateWords(options)
-  res.render('index', { result: result, options: options })
+  const option = req.body.option
+  console.log(option)
+  const result = generateWords(option)
+  res.render('index', { result, option })
 })
 
 

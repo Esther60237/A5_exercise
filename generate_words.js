@@ -18,17 +18,14 @@ function generateWords(option) {
   const phrase = ['很簡單阿!', '很容易阿!', '很快阿!', '很正常阿!']
 
   let result = ''
-  if (option.engineer === 'on') {
+  if (option === 'engineer') {
     result += `身為一個${target.engineer}，${trash(task.engineer)}，${trash(phrase)}`
-    checked = true
   }
-  if (option.designer === 'on') {
+  if (option === 'designer') {
     result += `身為一個${target.designer}，${trash(task.designer)}，${trash(phrase)}`
-    checked = true
   }
-  if (option.entrepreneur === 'on') {
+  if (option === 'entrepreneur') {
     result += `身為一個${target.entrepreneur}，${trash(task.entrepreneur)}，${trash(phrase)}`
-    checked = true
   }
 
   if (result.length === 0) {
