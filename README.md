@@ -1,7 +1,7 @@
 # Generate-Talker
 幹話產生器
 
-![image] (https://github.com/Esther60237/A5_exercise/blob/master/%E8%A8%BB%E8%A7%A3%202020-08-11%20225749.png)
+![image] ('https://github.com/Esther60237/A5_exercise/blob/master/%E8%A8%BB%E8%A7%A3%202020-08-11%20225749.png')
 
 # 啟動方式
 1. 將專案clone到本地端
